@@ -3,9 +3,6 @@ using System;
 
 class TickTick : GameEnvironment
 {
-    //Renzo is dik
-    //Maar niet zo heel erg
-    //Dus het is geen probleem.
     [STAThread]
     static void Main()
     {
