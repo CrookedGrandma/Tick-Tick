@@ -87,6 +87,7 @@
     <Compile Include="..\..\gamemanagement\TextGameObject.cs">
       <Link>GameManagement\TextGameObject.cs</Link>
     </Compile>
+    <Compile Include="GameManagement\Camera.cs" />
     <Compile Include="gameobjects\Clouds.cs" />
     <Compile Include="gameobjects\enemies\PatrollingEnemy.cs" />
     <Compile Include="gameobjects\enemies\PlayerFollowingEnemy.cs" />
