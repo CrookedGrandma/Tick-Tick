@@ -113,7 +113,9 @@ partial class Player : AnimatedGameObject
                 Die(true);
             }
         }
-
+        if (true /*Camera.CamPosX + SCHERMBREEDTE < GROOTTE VAN LEVEL*/) {
+            Camera.CamPosX = (int)GlobalPosition.X - GameEnvironment.Screen.X / 2 - this.Width / 2;
+        }
         DoPhysics();
     }
 
