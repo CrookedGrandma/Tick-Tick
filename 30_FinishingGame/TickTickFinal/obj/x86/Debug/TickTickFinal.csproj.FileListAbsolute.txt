@@ -30,7 +30,6 @@ d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Win
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_explode@5x5.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_idle.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_jump@14.png
-d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@13.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Rocket\spr_rocket@3.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Sparky\spr_electrocute@6x5.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Sparky\spr_electrocute.png
@@ -262,3 +261,4 @@ H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_Finishin
 H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTickFinal.csprojResolveAssemblyReference.cache
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@5.png
+d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@5.png
