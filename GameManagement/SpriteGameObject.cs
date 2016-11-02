@@ -26,7 +26,13 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        sprite.Draw(spriteBatch, this.GlobalPosition - Camera.CamPos, origin);
+        if (!(this is Button) &&
+            !(this is TimerGameObject) ){
+            sprite.Draw(spriteBatch, this.GlobalPosition - Camera.CamPos, origin);
+        }
+        else {
+            sprite.Draw(spriteBatch, this.GlobalPosition, origin);
+        }
     }
 
     public SpriteSheet Sprite
