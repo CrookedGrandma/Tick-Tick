@@ -15,7 +15,7 @@ partial class Player : AnimatedGameObject
     public Player(Vector2 start) : base(2, "player")
     {
         LoadAnimation("Sprites/Player/spr_idle", "idle", true); 
-        LoadAnimation("Sprites/Player/spr_run@13", "run", true, 0.05f);
+        LoadAnimation("Sprites/Player/spr_run@5", "run", true, 0.05f);
         LoadAnimation("Sprites/Player/spr_jump@14", "jump", false, 0.05f); 
         LoadAnimation("Sprites/Player/spr_celebrate@14", "celebrate", false, 0.05f);
         LoadAnimation("Sprites/Player/spr_die@5", "die", false);
