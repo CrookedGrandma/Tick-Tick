@@ -113,7 +113,7 @@ partial class Player : AnimatedGameObject
                 Die(true);
             }
         }
-        if (GlobalPosition.X > GameEnvironment.Screen.X / 2 && GlobalPosition.X < (Level.levelWidth * Level.tiles.CellWidth) - GameEnvironment.Screen.X / 2) {
+        if (GlobalPosition.X > GameEnvironment.Screen.X / 2 && GlobalPosition.X < (Level.levelWidth[1] * Level.tiles.CellWidth) - GameEnvironment.Screen.X / 2) {
             Camera.CamPosX = (int)GlobalPosition.X - GameEnvironment.Screen.X / 2 - this.Width / 2;
         }
         DoPhysics();

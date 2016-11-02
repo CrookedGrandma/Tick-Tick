@@ -4,10 +4,14 @@ using Microsoft.Xna.Framework;
 
 partial class Level : GameObjectList
 {
-    public static int levelWidth;
+    public static List<int> levelWidth = new List<int>();
     public static TileField tiles;
-    public void LoadTiles(string path)
+
+    public void LoadTiles(string path, int currLevel)
     {
+        for (int i = 0; i < 11; i++) {
+            levelWidth.Add(0);
+        }
         List<string> textLines = new List<string>();
         StreamReader fileReader = new StreamReader(path);
         string line = fileReader.ReadLine();
@@ -36,6 +40,7 @@ partial class Level : GameObjectList
         Add(tiles);
         tiles.CellWidth = 72;
         tiles.CellHeight = 55;
+        levelWidth[currLevel] = 0;
         for (int x = 0; x < width; ++x) 
         {
             for (int y = 0; y < textLines.Count - 1; ++y)
@@ -43,7 +48,7 @@ partial class Level : GameObjectList
                 Tile t = LoadTile(textLines[y][x], x, y);
                 tiles.Add(t, x, y);
             }
-            levelWidth++;
+            levelWidth[currLevel]++;
         }
     }
 
