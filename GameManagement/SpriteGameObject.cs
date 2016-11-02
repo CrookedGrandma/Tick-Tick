@@ -27,7 +27,12 @@ public class SpriteGameObject : GameObject
             return;
         }
         if (!(this is Button) &&
-            !(this is TimerGameObject) ){
+            id != "background" &&
+            id != "menuButton" &&
+            id != "levelButton" &&
+            id != "timerSprite" &&
+            id != "hintFrame" &&
+            id != "overlay"){
             sprite.Draw(spriteBatch, this.GlobalPosition - Camera.CamPos, origin);
         }
         else {

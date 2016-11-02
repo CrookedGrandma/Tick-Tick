@@ -26,7 +26,7 @@ partial class Level : GameObjectList
         backgrounds.Add(clouds);
         Add(backgrounds);
 
-        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 100);
+        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 100, "timerSprite");
         timerBackground.Position = new Vector2(10, 10);
         Add(timerBackground);
         TimerGameObject timer = new TimerGameObject(101, "timer");

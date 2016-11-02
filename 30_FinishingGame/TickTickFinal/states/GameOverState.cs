@@ -9,7 +9,7 @@ class GameOverState : GameObjectList
     public GameOverState()
     {
         playingState = GameEnvironment.GameStateManager.GetGameState("playingState");
-        SpriteGameObject overlay = new SpriteGameObject("Overlays/spr_gameover");
+        SpriteGameObject overlay = new SpriteGameObject("Overlays/spr_gameover", 0, "overlay");
         overlay.Position = new Vector2(GameEnvironment.Screen.X, GameEnvironment.Screen.Y) / 2 - overlay.Center;
         Add(overlay);
     }
