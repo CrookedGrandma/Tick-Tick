@@ -32,6 +32,7 @@ class PlayingState : IGameLoopObject
             if (value >= 0 && value < levels.Count)
             {
                 currentLevelIndex = value;
+                Camera.CurrLevel = value;
                 CurrentLevel.Reset();
             }
         }
@@ -82,6 +83,7 @@ class PlayingState : IGameLoopObject
         {
             CurrentLevelIndex++;
             levels[currentLevelIndex].Locked = false;
+            Camera.CamPosX = 0;
         }
         WriteLevelsStatus(content.RootDirectory + "/Levels/levels_status.txt");
     }
