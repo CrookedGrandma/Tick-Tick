@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework;
 
 partial class Level : GameObjectList
 {
+    public static int levelWidth;
+    public static TileField tiles;
     public void LoadTiles(string path)
     {
         List<string> textLines = new List<string>();
@@ -15,7 +17,7 @@ partial class Level : GameObjectList
             textLines.Add(line);
             line = fileReader.ReadLine();
         }
-        TileField tiles = new TileField(textLines.Count - 1, width, 1, "tiles");
+        tiles = new TileField(textLines.Count - 1, width, 1, "tiles");
 
         GameObjectList hintField = new GameObjectList(100);
         Add(hintField);
@@ -34,13 +36,14 @@ partial class Level : GameObjectList
         Add(tiles);
         tiles.CellWidth = 72;
         tiles.CellHeight = 55;
-        for (int x = 0; x < width; ++x)
+        for (int x = 0; x < width; ++x) 
         {
             for (int y = 0; y < textLines.Count - 1; ++y)
             {
                 Tile t = LoadTile(textLines[y][x], x, y);
                 tiles.Add(t, x, y);
             }
+            levelWidth++;
         }
     }
 
