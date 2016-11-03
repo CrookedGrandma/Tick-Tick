@@ -11,7 +11,7 @@ class UnpredictableEnemy : PatrollingEnemy
             return;
         }
         TurnAround();
-        velocity.X = Math.Sign(velocity.X) * (float)GameEnvironment.Random.NextDouble() * 5.0f;       
+        velocity.X = velocity.X * (float)GameEnvironment.Random.NextDouble() * 5.0f;       
     }
 }
 
