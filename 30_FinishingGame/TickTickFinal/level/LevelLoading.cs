@@ -9,7 +9,7 @@ partial class Level : GameObjectList
 
     public void LoadTiles(string path, int currLevel)
     {
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 12; i++) {
             levelWidth.Add(0);
         }
         List<string> textLines = new List<string>();
@@ -26,7 +26,7 @@ partial class Level : GameObjectList
         GameObjectList hintField = new GameObjectList(100);
         Add(hintField);
         string hint = textLines[textLines.Count - 1];
-        SpriteGameObject hintFrame = new SpriteGameObject("Overlays/spr_frame_hint", 1, "hintFrame");
+        SpriteGameObject hintFrame = new SpriteGameObject("Overlays/spr_frame_hint", 0, "hintFrame");
         hintField.Position = new Vector2((GameEnvironment.Screen.X - hintFrame.Width) / 2, 10);
         hintField.Add(hintFrame);
         TextGameObject hintText = new TextGameObject("Fonts/HintFont", 2);
@@ -161,7 +161,7 @@ partial class Level : GameObjectList
     private Tile LoadEndTile(int x, int y)
     {
         TileField tiles = Find("tiles") as TileField;
-        SpriteGameObject exitObj = new SpriteGameObject("Sprites/spr_goal", 1, "exit");
+        SpriteGameObject exitObj = new SpriteGameObject("Sprites/spr_goal", 4, "exit");
         exitObj.Position = new Vector2(x * tiles.CellWidth, (y+1) * tiles.CellHeight);
         exitObj.Origin = new Vector2(0, exitObj.Height);
         Add(exitObj);

@@ -343,10 +343,7 @@
       <Link>Content\Tiles\spr_wall_ice.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Backgrounds\spr_title%4030.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Backgrounds\spr_title_old.jpg">
+    <Content Include="Content\Backgrounds\spr_title.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Levels\11.txt">

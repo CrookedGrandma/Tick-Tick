@@ -3,7 +3,7 @@
 class Weapon : AnimatedGameObject {
     protected Vector2 startPosition;
 
-    public Weapon(bool moveToLeft, Vector2 startPosition) : base(3, "weapon") {
+    public Weapon(bool moveToLeft, Vector2 startPosition) : base(4, "weapon") {
         LoadAnimation("Sprites/Weapon/spr_weapon@11", "weapon", true, 0.025f);
         PlayAnimation("weapon");
         Mirror = moveToLeft;

@@ -5,7 +5,7 @@ class Rocket : AnimatedGameObject
     protected double spawnTime;
     protected Vector2 startPosition;
 
-    public Rocket(bool moveToLeft, Vector2 startPosition) : base(1, "enemy")
+    public Rocket(bool moveToLeft, Vector2 startPosition) : base(4, "enemy")
     {
         LoadAnimation("Sprites/Rocket/spr_rocket@3", "default", true, 0.2f);
         PlayAnimation("default");

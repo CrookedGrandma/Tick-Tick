@@ -7,19 +7,16 @@ class TitleMenuState : GameObjectList
     public TitleMenuState()
     {
         // load the title screen
-        //AnimatedGameObject titleScreen = new AnimatedGameObject(0, "background");
-        //titleScreen.LoadAnimation("Backgrounds/spr_title@30", "background", true);
-        //titleScreen.PlayAnimation("background");
-        SpriteGameObject titleScreen = new SpriteGameObject("Backgrounds/spr_title_old", 0, "background");
+        SpriteGameObject titleScreen = new SpriteGameObject("Backgrounds/spr_title", 0, "background");
         Add(titleScreen);
 
         // add a play button
-        playButton = new Button("Sprites/spr_button_play", 1, "menuButton");
+        playButton = new Button("Sprites/spr_button_play", 0, "menuButton");
         playButton.Position = new Vector2((GameEnvironment.Screen.X - playButton.Width) / 2, 540);
         Add(playButton);
 
         // add a help button
-        helpButton = new Button("Sprites/spr_button_help", 1, "menuButton");
+        helpButton = new Button("Sprites/spr_button_help", 0, "menuButton");
         helpButton.Position = new Vector2((GameEnvironment.Screen.X - helpButton.Width) / 2, 600);
         Add(helpButton);
     }

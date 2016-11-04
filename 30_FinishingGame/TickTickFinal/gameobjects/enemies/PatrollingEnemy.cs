@@ -6,7 +6,7 @@ class PatrollingEnemy : AnimatedGameObject
     protected float waitTime;
     protected Vector2 startPosition;
 
-    public PatrollingEnemy() : base(1, "enemy") {
+    public PatrollingEnemy() : base(4, "enemy") {
         waitTime = 0.0f;
         velocity.X = 120;
         LoadAnimation("Sprites/Flame/spr_flame@9", "default", true);

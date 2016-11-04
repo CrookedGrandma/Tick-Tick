@@ -16,7 +16,7 @@ class LevelButton : GameObjectList
 
         levelsSolved = new SpriteGameObject("Sprites/spr_level_solved", 0, "levelButton", levelIndex - 1);
         levelsUnsolved = new SpriteGameObject("Sprites/spr_level_unsolved", 0, "levelButton");
-        sprLock = new SpriteGameObject("Sprites/spr_level_locked", 2, "levelButton");
+        sprLock = new SpriteGameObject("Sprites/spr_level_locked", 0, "levelButton");
         Add(levelsSolved);
         Add(levelsUnsolved);
         Add(sprLock);

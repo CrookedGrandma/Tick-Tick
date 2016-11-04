@@ -15,7 +15,7 @@ class LevelMenuState : GameObjectList
         Add(background);
 
         // add the level buttons
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 11; i++)
         {
             int row = i / 4;
             int column = i % 4;
@@ -25,7 +25,7 @@ class LevelMenuState : GameObjectList
         }
 
         // add a back button
-        backButton = new Button("Sprites/spr_button_back", 1);
+        backButton = new Button("Sprites/spr_button_back", 0);
         backButton.Position = new Vector2((GameEnvironment.Screen.X - backButton.Width) / 2, 750);
         Add(backButton);
     }

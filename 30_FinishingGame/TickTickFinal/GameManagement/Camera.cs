@@ -14,4 +14,7 @@ class Camera {
         get { return levelIndex; }
         set { levelIndex = value + 1; }
     }
+    public static void Reset() {
+        CameraPos = Vector2.Zero;
+    }
 }

@@ -28,18 +28,7 @@ public class SpriteGameObject : GameObject
         {
             return;
         }
-        if (!(this is Button) &&
-            id != "background" &&
-            id != "menuButton" &&
-            id != "levelButton" &&
-            id != "timerSprite" &&
-            id != "hintFrame" &&
-            id != "overlay"){
-            sprite.Draw(spriteBatch, this.GlobalPosition - Camera.CamPos, origin);
-        }
-        else {
-            sprite.Draw(spriteBatch, this.GlobalPosition, origin);
-        }
+        sprite.Draw(spriteBatch, this.GlobalPosition - Camera.CamPos * layer / 4, origin);
     }
 
     public SpriteSheet Sprite
