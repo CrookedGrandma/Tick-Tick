@@ -6,8 +6,8 @@ public class SpriteGameObject : GameObject
     protected SpriteSheet sprite;
     protected Vector2 origin;
     public bool PerPixelCollisionDetection = true;
-    protected int patrolShotCount = 0;
-    protected int sparkyShotCount = 0;
+    protected int patrolShotCount = 1;
+    protected int sparkyShotCount = 1;
 
     public SpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0)
         : base(layer, id)
@@ -130,9 +130,10 @@ public class SpriteGameObject : GameObject
 
     protected void Die() {
         if (this is PatrollingEnemy) {
+            PatrollingEnemy current = this as PatrollingEnemy;
             if (patrolShotCount == 5) {
                 velocity.Y = 1000f;
-                Reset();
+                current.ResetToo();
             }
             else {
                 patrolShotCount++;
@@ -141,7 +142,7 @@ public class SpriteGameObject : GameObject
         else if (this is Sparky) {
             if (sparkyShotCount == 10) {
                 velocity.Y = 1000f;
-                Reset();
+                //Reset();
             }
             else {
                 sparkyShotCount++;

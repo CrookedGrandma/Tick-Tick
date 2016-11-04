@@ -114,7 +114,7 @@ partial class Level : GameObjectList
     {
         GameObjectList enemies = Find("enemies") as GameObjectList;
         TileField tiles = Find("tiles") as TileField;
-        GameObject enemy = null;
+        PatrollingEnemy enemy = null;
         switch (enemyType)
         {
             case 'A': enemy = new UnpredictableEnemy(); break;
@@ -122,7 +122,7 @@ partial class Level : GameObjectList
             case 'C': 
             default:  enemy = new PatrollingEnemy(); break;
         }
-        enemy.Position = new Vector2(((float)x + 0.5f) * tiles.CellWidth, (y + 1) * tiles.CellHeight);
+        enemy.StartPosition = new Vector2(((float)x + 0.5f) * tiles.CellWidth, (y + 1) * tiles.CellHeight);
         enemies.Add(enemy);
         return new Tile();
     }

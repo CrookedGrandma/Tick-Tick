@@ -11,7 +11,6 @@ class PatrollingEnemy : AnimatedGameObject
         velocity.X = 120;
         LoadAnimation("Sprites/Flame/spr_flame@9", "default", true);
         PlayAnimation("default");
-        this.startPosition = position;
     }
 
     public override void Update(GameTime gameTime)
@@ -43,13 +42,25 @@ class PatrollingEnemy : AnimatedGameObject
             }
         }
         CheckCollision();
-        Console.WriteLine("Level " + Camera.CurrLevel + ": X=" + position.X + ", Y=" + position.Y); //DEBUGGING
+    }
+
+    public Vector2 StartPosition {
+        set {
+            startPosition = value;
+            position = value;
+        }
     }
 
     public override void Reset() {
         base.Reset();
         position = startPosition;
+        patrolShotCount = 1;
+    }
+
+    public void ResetToo() {
+        position = startPosition;
         velocity.Y = 0f;
+        visible = false;
     }
 
     public void CheckCollision()
