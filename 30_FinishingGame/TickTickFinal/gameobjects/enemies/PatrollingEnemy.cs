@@ -43,12 +43,12 @@ class PatrollingEnemy : AnimatedGameObject
             }
         }
         CheckCollision();
-        Reset();
+        Console.WriteLine("Level " + Camera.CurrLevel + ": X=" + position.X + ", Y=" + position.Y); //DEBUGGING
     }
 
     public override void Reset() {
         base.Reset();
-        position = new Vector2(GameEnvironment.Screen.X / 2, GameEnvironment.Screen.Y / 2);
+        position = startPosition;
         velocity.Y = 0f;
     }
 

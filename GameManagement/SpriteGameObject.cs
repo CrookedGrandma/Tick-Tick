@@ -132,6 +132,7 @@ public class SpriteGameObject : GameObject
         if (this is PatrollingEnemy) {
             if (patrolShotCount == 5) {
                 velocity.Y = 1000f;
+                Reset();
             }
             else {
                 patrolShotCount++;
@@ -140,6 +141,7 @@ public class SpriteGameObject : GameObject
         else if (this is Sparky) {
             if (sparkyShotCount == 10) {
                 velocity.Y = 1000f;
+                Reset();
             }
             else {
                 sparkyShotCount++;
