@@ -176,3 +176,4 @@ C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTic
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\SharpDX.RawInput.xml
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTickFinal.csprojResolveAssemblyReference.cache
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Levels\11.txt

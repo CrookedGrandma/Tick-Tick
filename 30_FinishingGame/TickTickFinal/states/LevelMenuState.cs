@@ -15,7 +15,7 @@ class LevelMenuState : GameObjectList
         Add(background);
 
         // add the level buttons
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 11; i++)
         {
             int row = i / 4;
             int column = i % 4;

@@ -90,7 +90,7 @@ class PlayingState : IGameLoopObject
 
     public void LoadLevels()
     {
-        for (int currLevel = 1; currLevel <= 10; currLevel++)
+        for (int currLevel = 1; currLevel <= 11; currLevel++)
         {
             levels.Add(new Level(currLevel));
         }
