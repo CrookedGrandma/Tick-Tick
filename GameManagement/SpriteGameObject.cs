@@ -6,6 +6,8 @@ public class SpriteGameObject : GameObject
     protected SpriteSheet sprite;
     protected Vector2 origin;
     public bool PerPixelCollisionDetection = true;
+    protected int patrolShotCount = 0;
+    protected int sparkyShotCount = 0;
 
     public SpriteGameObject(string assetName, int layer = 0, string id = "", int sheetIndex = 0)
         : base(layer, id)
@@ -115,7 +117,7 @@ public class SpriteGameObject : GameObject
         }
         return false;
     }
-    public bool Dorito() {
+    protected bool Dorito() {
         Weapon dorito = GameWorld.Find("weapon") as Weapon;
         if (dorito != null) {
             if (CollidesWith(dorito) && visible) {
@@ -124,6 +126,28 @@ public class SpriteGameObject : GameObject
             }
         }
         return false;
+    }
+
+    protected void Die() {
+        if (this is PatrollingEnemy) {
+            if (patrolShotCount == 5) {
+                velocity.Y = 1000f;
+            }
+            else {
+                patrolShotCount++;
+            }
+        }
+        else if (this is Sparky) {
+            if (sparkyShotCount == 10) {
+                velocity.Y = 1000f;
+            }
+            else {
+                sparkyShotCount++;
+            }
+        }
+        else {
+            velocity.Y = 1000f;
+        }
     }
 }
 

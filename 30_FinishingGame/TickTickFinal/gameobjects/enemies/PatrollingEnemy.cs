@@ -4,12 +4,14 @@ using System;
 class PatrollingEnemy : AnimatedGameObject
 {
     protected float waitTime;
+    protected Vector2 startPosition;
 
     public PatrollingEnemy() : base(1, "enemy") {
         waitTime = 0.0f;
         velocity.X = 120;
         LoadAnimation("Sprites/Flame/spr_flame@9", "default", true);
         PlayAnimation("default");
+        this.startPosition = position;
     }
 
     public override void Update(GameTime gameTime)
@@ -40,15 +42,25 @@ class PatrollingEnemy : AnimatedGameObject
                 velocity.X = 0.0f;
             }
         }
-        CheckPlayerCollision();
+        CheckCollision();
+        Reset();
     }
 
-    public void CheckPlayerCollision()
+    public override void Reset() {
+        base.Reset();
+        position = new Vector2(GameEnvironment.Screen.X / 2, GameEnvironment.Screen.Y / 2);
+        velocity.Y = 0f;
+    }
+
+    public void CheckCollision()
     {
         Player player = GameWorld.Find("player") as Player;
         if (CollidesWith(player))
         {
             player.Die(false);
+        }
+        if (Dorito()) {
+            Die();
         }
     }
 

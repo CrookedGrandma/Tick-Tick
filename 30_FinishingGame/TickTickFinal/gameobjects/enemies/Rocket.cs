@@ -45,10 +45,6 @@ class Rocket : AnimatedGameObject
         }
     }
 
-    void Die() {
-        velocity.Y = 1000f;
-    }
-
     public void CheckCollision() {
         Player player = GameWorld.Find("player") as Player;
         if (CollidesWith(player) && visible) {
