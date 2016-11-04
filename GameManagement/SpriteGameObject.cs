@@ -140,9 +140,10 @@ public class SpriteGameObject : GameObject
             }
         }
         else if (this is Sparky) {
+            Sparky current = this as Sparky;
             if (sparkyShotCount == 10) {
                 velocity.Y = 1000f;
-                //Reset();
+                current.ResetToo();
             }
             else {
                 sparkyShotCount++;

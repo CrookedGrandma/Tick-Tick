@@ -6,6 +6,7 @@ class Sparky : AnimatedGameObject
     protected float yOffset;
     protected float initialY;
 
+
     public Sparky(float initialY) : base(1, "enemy") {
         LoadAnimation("Sprites/Sparky/spr_electrocute@6x5", "electrocute", false);
         LoadAnimation("Sprites/Sparky/spr_idle", "idle", true);
@@ -16,10 +17,12 @@ class Sparky : AnimatedGameObject
 
     public override void Reset()
     {
+        base.Reset();
         idleTime = (float)GameEnvironment.Random.NextDouble() * 5;
         position.Y = initialY;
         yOffset = 120;
         velocity = Vector2.Zero;
+        patrolShotCount = 1;
     }
 
     public override void Update(GameTime gameTime)
@@ -56,15 +59,24 @@ class Sparky : AnimatedGameObject
             }
         }
 
-        CheckPlayerCollision();
+        CheckCollision();
     }
 
-    public void CheckPlayerCollision()
+    public void ResetToo() {
+        position.Y = initialY;
+        velocity.Y = 0f;
+        visible = false;
+    }
+
+    public void CheckCollision()
     {
         Player player = GameWorld.Find("player") as Player;
         if (CollidesWith(player) && idleTime <= 0)
         {
             player.Die(false);
+        }
+        if (Dorito()) {
+            Die();
         }
     }
 }
