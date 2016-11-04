@@ -6,8 +6,7 @@ class Sparky : AnimatedGameObject
     protected float yOffset;
     protected float initialY;
 
-    public Sparky(float initialY)
-    {
+    public Sparky(float initialY) : base(1, "enemy") {
         LoadAnimation("Sprites/Sparky/spr_electrocute@6x5", "electrocute", false);
         LoadAnimation("Sprites/Sparky/spr_idle", "idle", true);
         PlayAnimation("idle");

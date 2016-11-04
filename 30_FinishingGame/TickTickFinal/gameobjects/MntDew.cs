@@ -1,11 +1,11 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 
-class WaterDrop : SpriteGameObject
+class MntDew : SpriteGameObject
 {
     protected float bounce;
 
-    public WaterDrop(int layer=0, string id="") : base("Sprites/spr_water", layer, id) 
+    public MntDew(int layer=0, string id="") : base("Sprites/spr_water", layer, id) 
     {
     }
 

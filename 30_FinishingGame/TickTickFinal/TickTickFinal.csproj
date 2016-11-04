@@ -101,7 +101,7 @@
     <Compile Include="gameobjects\TileField.cs" />
     <Compile Include="gameobjects\TimerGameObject.cs" />
     <Compile Include="gameobjects\VisibilityTimer.cs" />
-    <Compile Include="gameobjects\WaterDrop.cs" />
+    <Compile Include="gameobjects\MntDew.cs" />
     <Compile Include="gameobjects\Weapon.cs" />
     <Compile Include="level\Level.cs" />
     <Compile Include="level\LevelGameLoop.cs" />

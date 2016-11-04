@@ -5,7 +5,7 @@ class Rocket : AnimatedGameObject
     protected double spawnTime;
     protected Vector2 startPosition;
 
-    public Rocket(bool moveToLeft, Vector2 startPosition)
+    public Rocket(bool moveToLeft, Vector2 startPosition) : base(1, "enemy")
     {
         LoadAnimation("Sprites/Rocket/spr_rocket@3", "default", true, 0.2f);
         PlayAnimation("default");
@@ -36,25 +36,32 @@ class Rocket : AnimatedGameObject
         {
             this.velocity.X *= -1;
         }
-        CheckPlayerCollision();
+        CheckCollision();
         // check if we are outside the screen
-        Rectangle screenBox = new Rectangle(0, 0, GameEnvironment.Screen.X, GameEnvironment.Screen.Y);
+        Rectangle screenBox = new Rectangle(0, 0, Level.levelWidth[Camera.CurrLevel] * Level.tiles.CellWidth, GameEnvironment.Screen.Y);
         if (!screenBox.Intersects(this.BoundingBox))
         {
             Reset();
         }
     }
 
-    public void CheckPlayerCollision() {
+    void Die() {
+        velocity.Y = 1000f;
+    }
+
+    public void CheckCollision() {
         Player player = GameWorld.Find("player") as Player;
         if (CollidesWith(player) && visible) {
             if (this.GlobalPosition.Y > (player.GlobalPosition.Y + 20) && player.IsAlive) {
                 player.Jump();
-                velocity.Y = 1000f;
+                Die();
             }
             else {
                 player.Die(false);
             }
+        }
+        if (Dorito()) {
+            Die();
         }
     }
 }

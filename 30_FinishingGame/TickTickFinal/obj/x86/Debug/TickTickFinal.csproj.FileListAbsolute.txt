@@ -262,3 +262,4 @@ H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_Finishin
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@5.png
 d:\Users\Renzo\Documents\GitHub\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@5.png
 H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Player\spr_run@5.png
+H:\Users_link\Kasper\Documents\Kasper\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sprites\Weapon\spr_weapon@11.png

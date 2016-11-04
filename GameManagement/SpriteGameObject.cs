@@ -115,5 +115,15 @@ public class SpriteGameObject : GameObject
         }
         return false;
     }
+    public bool Dorito() {
+        Weapon dorito = GameWorld.Find("weapon") as Weapon;
+        if (dorito != null) {
+            if (CollidesWith(dorito) && visible) {
+                dorito.Reset();
+                return true;
+            }
+        }
+        return false;
+    }
 }
 

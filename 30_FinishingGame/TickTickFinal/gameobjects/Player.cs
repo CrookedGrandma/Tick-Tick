@@ -1,5 +1,4 @@
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 
 partial class Player : AnimatedGameObject
@@ -50,11 +49,11 @@ partial class Player : AnimatedGameObject
         {
             return;
         }
-        if (inputHelper.IsKeyDown(Keys.Left))
+        if (inputHelper.IsKeyDown(Keys.Left) || inputHelper.IsKeyDown(Keys.A))
         {
             velocity.X = -walkingSpeed;
         }
-        else if (inputHelper.IsKeyDown(Keys.Right))
+        else if (inputHelper.IsKeyDown(Keys.Right) || inputHelper.IsKeyDown(Keys.D))
         {
             velocity.X = walkingSpeed;
         }
@@ -66,9 +65,13 @@ partial class Player : AnimatedGameObject
         {
             Mirror = velocity.X < 0;
         }
-        if ((inputHelper.KeyPressed(Keys.Space) || inputHelper.KeyPressed(Keys.Up)) && isOnTheGround)
+        if ((inputHelper.KeyPressed(Keys.Up) || inputHelper.IsKeyDown(Keys.W)) && isOnTheGround)
         {
             Jump();
+        }
+        if (inputHelper.KeyPressed(Keys.Space)) {
+            Weapon dorito = new Weapon(Mirror, this.GlobalPosition - new Vector2(0, this.Height / 2));
+            GameWorld.AddToo(dorito);
         }
     }
 

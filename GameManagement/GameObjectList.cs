@@ -5,10 +5,14 @@ using Microsoft.Xna.Framework.Graphics;
 public class GameObjectList : GameObject
 {
     protected List<GameObject> children;
+    protected List<GameObject> addList;
+    protected List<GameObject> removeList;
 
     public GameObjectList(int layer = 0, string id = "") : base(layer, id)
     {
         children = new List<GameObject>();
+        addList = new List<GameObject>();
+        removeList = new List<GameObject>();
     }
 
     public List<GameObject> Children
@@ -30,10 +34,18 @@ public class GameObjectList : GameObject
         children.Add(obj);
     }
 
+    public void AddToo(GameObject obj) {
+        addList.Add(obj);
+    }
+
     public void Remove(GameObject obj)
     {
         children.Remove(obj);
         obj.Parent = null;
+    }
+
+    public void RemoveToo(GameObject obj) {
+        removeList.Add(obj);
     }
 
     public GameObject Find(string id)
@@ -71,6 +83,14 @@ public class GameObjectList : GameObject
         {
             obj.Update(gameTime);
         }
+        foreach (GameObject obj in addList) {
+            Add(obj);
+        }
+        addList.Clear();
+        foreach (GameObject obj in removeList) {
+            Remove(obj);
+        }
+        removeList.Clear();
     }
 
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
