@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 False,True
 False,True
 False,True
@@ -7,18 +6,6 @@ False,True
 False,True
 False,True
 False,True
-False,True
-False,True
-False,True
-=======
-false,false
-true,false
-true,false
-true,false
-true,false
-true,false
-true,false
-true,false
-true,false
-true,false
->>>>>>> origin/master
+False,False
+True,False
+True,False
