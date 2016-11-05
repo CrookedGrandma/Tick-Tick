@@ -150,7 +150,8 @@ partial class Player : AnimatedGameObject
         else
         {
             velocity.Y = -900;
-            GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_die");
+            int dieSound = GameEnvironment.Random.Next(1, 6);
+            GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_die_" + dieSound.ToString());
         }
         PlayAnimation("die");
     }

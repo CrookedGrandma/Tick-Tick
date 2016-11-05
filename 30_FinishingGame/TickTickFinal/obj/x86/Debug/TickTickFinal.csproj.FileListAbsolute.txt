@@ -58,9 +58,7 @@ C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTic
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Fonts\HintFont.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Fonts\Hud.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_music.xnb
-C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_fall.xnb
-C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_jump.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_won.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_watercollected.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\TickTick5.exe
@@ -88,3 +86,10 @@ C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTic
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTickFinal.csprojResolveAssemblyReference.cache
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTick5.exe
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\obj\x86\Debug\TickTick5.pdb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_jump_1.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_jump_2.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die_1.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die_2.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die_3.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die_4.xnb
+C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_die_5.xnb

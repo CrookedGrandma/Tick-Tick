@@ -6,7 +6,8 @@ partial class Player :  AnimatedGameObject
     public void Jump(float speed = 1100)
     {
         velocity.Y = -speed;
-        GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_jump");
+        int jumpSound = GameEnvironment.Random.Next(1, 3);
+        GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_jump_" + jumpSound.ToString());
     }
     
     private void DoPhysics()
