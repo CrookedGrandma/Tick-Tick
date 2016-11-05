@@ -21,7 +21,15 @@ partial class Level : GameObjectList
             textLines.Add(line);
             line = fileReader.ReadLine();
         }
-        tiles = new TileField(textLines.Count - 1, width, 1, "tiles");
+        tiles = new TileField(textLines.Count - 2, width, 1, "tiles");
+
+        double timerTime = double.Parse(textLines[textLines.Count - 2]);
+        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 0, "timerSprite");
+        timerBackground.Position = new Vector2(10, 10);
+        Add(timerBackground);
+        TimerGameObject timer = new TimerGameObject(timerTime, 0, "timer");
+        timer.Position = new Vector2(25, 30);
+        Add(timer);
 
         GameObjectList hintField = new GameObjectList(100);
         Add(hintField);
@@ -43,7 +51,7 @@ partial class Level : GameObjectList
         levelWidth[currLevel] = 0;
         for (int x = 0; x < width; ++x) 
         {
-            for (int y = 0; y < textLines.Count - 1; ++y)
+            for (int y = 0; y < textLines.Count - 2; ++y)
             {
                 Tile t = LoadTile(textLines[y][x], x, y);
                 tiles.Add(t, x, y);

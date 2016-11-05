@@ -13,4 +13,5 @@ W.W.............W..R
 ---............-----
 .1...W..W..W..W.W.W.
 ###..#..#..#..######
+0.5
 Avoid the rockets, you can jump through some of the tiles.
