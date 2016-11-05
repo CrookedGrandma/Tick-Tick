@@ -143,16 +143,11 @@ partial class Player : AnimatedGameObject
         }
         isAlive = false;
         velocity.X = 0.0f;
-        if (falling)
-        {
-            GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_fall");
-        }
-        else
-        {
+        if (!falling) {
             velocity.Y = -900;
-            int dieSound = GameEnvironment.Random.Next(1, 6);
-            GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_die_" + dieSound.ToString());
         }
+        int dieSound = GameEnvironment.Random.Next(1, 6);
+        GameEnvironment.AssetManager.PlaySound("Sounds/snd_player_die_" + dieSound.ToString());
         PlayAnimation("die");
     }
 

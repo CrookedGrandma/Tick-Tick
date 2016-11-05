@@ -375,12 +375,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\assets\ticktick\sounds\snd_player_fall.xnb">
-      <Link>Content\Sounds\snd_player_fall.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\..\assets\ticktick\sounds\snd_player_won.xnb">
       <Link>Content\Sounds\snd_player_won.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Microsoft.Xna.Framework;
 
@@ -23,11 +24,12 @@ partial class Level : GameObjectList
         }
         tiles = new TileField(textLines.Count - 2, width, 1, "tiles");
 
-        double timerTime = double.Parse(textLines[textLines.Count - 2]);
-        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 0, "timerSprite");
+        string timerString = textLines[textLines.Count - 2];
+        double timerTime = Double.Parse(timerString);
+        SpriteGameObject timerBackground = new SpriteGameObject("Sprites/spr_timer", 100, "timerSprite");
         timerBackground.Position = new Vector2(10, 10);
         Add(timerBackground);
-        TimerGameObject timer = new TimerGameObject(timerTime, 0, "timer");
+        TimerGameObject timer = new TimerGameObject(timerTime, 101, "timer");
         timer.Position = new Vector2(25, 30);
         Add(timer);
 

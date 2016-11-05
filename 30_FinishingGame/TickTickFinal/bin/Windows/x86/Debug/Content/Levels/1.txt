@@ -13,5 +13,5 @@ WWW...................
 ......................
 .1........W.W.W.W.W..W
 ######################
-0.5
-Pick up all the waterdrops and reach the exit in time.
+0,5
+Collect all the Dew. Move with AWD or arrow keys, m'lady.

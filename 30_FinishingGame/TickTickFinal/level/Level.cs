@@ -26,7 +26,7 @@ partial class Level : GameObjectList
         backgrounds.Add(clouds);
         Add(backgrounds);
 
-        quitButton = new Button("Sprites/spr_button_quit", 0);
+        quitButton = new Button("Sprites/spr_button_quit", 100);
         quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
         Add(quitButton);
 

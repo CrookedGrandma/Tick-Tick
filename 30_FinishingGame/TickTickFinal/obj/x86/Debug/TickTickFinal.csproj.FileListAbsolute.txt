@@ -58,7 +58,6 @@ C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTic
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Fonts\HintFont.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Fonts\Hud.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_music.xnb
-C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_fall.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_player_won.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\Content\Sounds\snd_watercollected.xnb
 C:\Users\ktnoo\Documents\Uni\Gameprogrammeren\Tick-Tick\30_FinishingGame\TickTickFinal\bin\Windows\x86\Debug\TickTick5.exe
