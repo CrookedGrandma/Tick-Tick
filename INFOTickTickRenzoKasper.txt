@@ -1,0 +1,20 @@
+Dank Dank (Een parodie op het originele spel Tick Tick©)
+Door:
+Kasper Nooteboom 5845866
+Renzo Schindeler 5964962
+
+Wij hebben voldaan aan de volgende opdrachten:
+- Bewegende camera aan de hand van de spelerspositie.
+- De mogelijkheid om langere levels te maken/spelen. 
+- De timer aanpasbaar per level.
+- De raket gaat dood als je bovenop de raket springt.
+- De speler kan projectielen schieten en als de speler de vijand (meerdere keren) raakt gaat hij dood.
+- Er is een parallax-effect dat afhankelijk is van de layer van het object.
+- Aanpassingen aan huidige levels om de nieuwe functies zoals timer en camera goed weer te geven.
+
+Extra opdrachten/toevoegingen:
+- Reskin van de speler, vijanden, spelobjecten en de verschillende menu's.
+- Extra vijanden.
+- Extra levels. (Probeer level 12, het is fantastisch. Je kan een level skippen met F10)
+- Een remix van de soundtrack (geproduceerd door ons beide).
+- Extra sound effects.
