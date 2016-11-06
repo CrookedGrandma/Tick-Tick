@@ -77,7 +77,7 @@ partial class Level : GameObjectList
             case 'X':
                 return LoadEndTile(x, y);
             case 'W':
-                return LoadWaterTile(x, y);
+                return LoadMntDewTile(x, y);
             case '1':
                 return LoadStartTile(x, y);
             case '#':
@@ -89,9 +89,13 @@ partial class Level : GameObjectList
             case 'T':
                 return LoadTurtleTile(x, y);
             case 'R':
-                return LoadRocketTile(x, y, true);
+                return LoadSanicTile(x, y, true, 1);
             case 'r':
-                return LoadRocketTile(x, y, false);
+                return LoadSanicTile(x, y, false, 1);
+            case 'F':
+                return LoadSanicTile(x, y, true, 1.15);
+            case 'f':
+                return LoadSanicTile(x, y, false, 1.15);
             case 'S':
                 return LoadSparkyTile(x, y);
             case 'A':
@@ -158,12 +162,12 @@ partial class Level : GameObjectList
         return new Tile();
     }
 
-    private Tile LoadRocketTile(int x, int y, bool moveToLeft)
+    private Tile LoadSanicTile(int x, int y, bool moveToLeft, double speedMult)
     {
         GameObjectList enemies = Find("enemies") as GameObjectList;
         TileField tiles = Find("tiles") as TileField;
         Vector2 startPosition = new Vector2(((float)x + 0.5f) * tiles.CellWidth, (y + 1) * tiles.CellHeight);
-        Rocket enemy = new Rocket(moveToLeft, startPosition);
+        Sanic enemy = new Sanic(moveToLeft, startPosition, speedMult);
         enemies.Add(enemy);
         return new Tile();
     }
@@ -178,7 +182,7 @@ partial class Level : GameObjectList
         return new Tile();
     }
 
-    private Tile LoadWaterTile(int x, int y)
+    private Tile LoadMntDewTile(int x, int y)
     {
         GameObjectList waterdrops = Find("waterdrops") as GameObjectList;
         TileField tiles = Find("tiles") as TileField;

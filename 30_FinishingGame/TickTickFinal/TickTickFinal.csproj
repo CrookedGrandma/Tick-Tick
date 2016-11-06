@@ -94,7 +94,7 @@
     <Compile Include="gameobjects\Clouds.cs" />
     <Compile Include="gameobjects\enemies\PatrollingEnemy.cs" />
     <Compile Include="gameobjects\enemies\PlayerFollowingEnemy.cs" />
-    <Compile Include="gameobjects\enemies\Rocket.cs" />
+    <Compile Include="gameobjects\enemies\Sanic.cs" />
     <Compile Include="gameobjects\enemies\Sparky.cs" />
     <Compile Include="gameobjects\enemies\Turtle.cs" />
     <Compile Include="gameobjects\enemies\UnpredictableEnemy.cs" />
@@ -353,6 +353,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Sprites\Player\spr_run%405.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sprites\Rocket\spr_rocket_fast%403.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Sprites\Weapon\spr_weapon%4011.png">

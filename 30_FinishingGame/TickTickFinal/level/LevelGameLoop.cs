@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 partial class Level : GameObjectList
 {
@@ -10,7 +11,18 @@ partial class Level : GameObjectList
         {
             Reset();
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
-        }      
+        }
+        //CHEAT (TOTALLY ONLY FOR DEBUGGING)
+        if (inputHelper.KeyPressed(Keys.F10)) {
+            GameObjectList waterdrops = Find("waterdrops") as GameObjectList;
+            foreach (GameObject d in waterdrops.Children) {
+                d.Visible = false;
+            }
+            SpriteGameObject exitObj = Find("exit") as SpriteGameObject;
+            Player player = Find("player") as Player;
+            player.Position = exitObj.Position;
+        }
+        //END CHEAT
     }
 
     public override void Update(GameTime gameTime)

@@ -22,7 +22,7 @@ class Sparky : AnimatedGameObject
         position.Y = initialY;
         yOffset = 120;
         velocity = Vector2.Zero;
-        patrolShotCount = 1;
+        sparkyShotCount = 1;
     }
 
     public override void Update(GameTime gameTime)
